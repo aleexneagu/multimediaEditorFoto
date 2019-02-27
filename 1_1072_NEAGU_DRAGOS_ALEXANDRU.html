@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" href="media/aparat.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <title>Mini Editor Foto</title>
+    <link href="1_1072_NEAGU_DRAGOS_ALEXANDRU.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+        <audio id="sunet_salvare" src="media/salvare.mp3" preload="auto"></audio> 
+        <audio id="sunet_stergere" src="media/stergere.mp3" preload="auto"></audio>
+        <audio id="sunet_click" src="media/click.mp3" preload="auto"></audio> 
+
+        <a id="urlSalvare"></a>
+
+        <header>
+            <h1 align="center"> MINI EDITOR FOTO</h1>
+        </header>
+
+<canvas id="canvas" width="600" height="600"><img id="img"></canvas>
+<script src="1_1072_NEAGU_DRAGOS_ALEXANDRU.js"></script>
+
+
+<div id="controls">
+    <p><label>Umple formele:
+     <input id="fillBox" type="checkbox" checked="checked"></label></p>
+
+    <div class="alegere_forme" >
+
+        <ul style="list-style-type:none">
+        <li><input type="radio" name="forma" value="linie" checked="checked">linie</li>
+        <li><input type="radio" name="forma" value="cerc">cerc</li>
+        <li><input type="radio" name="forma" value="dreptunghi">dreptunghi</li>
+
+        <li>
+        <button class="efecteBtn" id="lum_minus" name="luminozitate_minus" type="button">-</button>
+        <label for="luminozitate">luminozitate</label>
+        <button class="efecteBtn" id="lum_plus" name="luminozitate_plus" type="button">+</button>
+        </li>
+        
+        <li>
+        <button class="efecteBtn" id="contrast_minus" name="contrast_minus" type="button">-</button>
+        <label for="contrast">contrast &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+        <button class="efecteBtn" id="contrast_plus" name="contrast_plus" type="button">+</button>
+        </li>
+
+        <li>
+        <button class="efecteBtn" id="intensitate_minus" name="intensitate_minus" type="button">-</button>
+        <label for="intensitate">expunere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <button class="efecteBtn" id="intensitate_plus" name="intensitate_plus" type="button">+</button>
+        </li>
+
+        <li>
+        <button class="efecteBtn" id="saturatie_minus" name="saturatie_minus" type="button">-</button>
+        <label for="saturatie">saturatie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <button class="efecteBtn" id="saturatie_plus" name="saturatie_plus" type="button">+</button>
+        </li>
+
+        <li>
+        <button class="efecteBtn" id="zgomot_minus" name="zgomot_plus" type="button">-</button>
+        <label  for="zgomot">zgomot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <button class="efecteBtn" id="zgomot_plus" name="zgomot_plus" type="button">+</button>
+        </li>
+
+        <button class="filtre" id="gri" name="gri" type="button">filtru alb-negru</button>
+        <button class="filtre" id="aleator" name="aleator" >filtru aleator</button>
+        <button class="filtre" id="sepia" name="sepia">&nbsp;filtru sepia</button>
+
+        <ol>
+        <li>
+            <button class="zoomin" id="btn_zoomin" name="btn_zoomin" type="button"></button>
+        </li>
+        <li>
+            <button class="sterge" id="btn_sterge" name="btn_sterge" type="button"></button>
+        </li>
+        <li>
+            <button class="zoomout" id="btn_zoomout" name="btn_zoomout" type="button"></button>
+        </li>
+        </ol>
+            
+        <button id="salveaza" name="salveaza">salveaza</button>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

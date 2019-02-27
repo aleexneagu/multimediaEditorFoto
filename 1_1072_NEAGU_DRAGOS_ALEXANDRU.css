@@ -1,0 +1,174 @@
+*{
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+body
+{
+    background: url('media/fundal.gif') no-repeat;
+    height: 100%; 
+    background-position: center;
+    width:100%;
+    background-size: cover;
+}
+
+canvas
+{
+    background-color: white;
+    position: relative;
+    top: 24px;
+    left:50px;
+    border: 1px solid black;
+}
+
+#controls{
+    position: absolute;
+    top:100px;
+    left:730px;
+    padding:20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #5F9EA0;
+}
+
+ul #salveaza
+{
+    margin-top: 30px;
+    height: 75px;
+    width: 100%;
+    font-size: 25px;
+    color:black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius:40px; 
+}
+
+ ul #salveaza:hover {
+      background-color: black;
+      color: #5F9EA0;
+ }
+
+li
+{   
+    margin-top:5px;
+    margin-left: 2px;
+    font-family: "arial";
+    font-size: 16px;
+    font:bold;
+}
+
+.alegere_forme {
+    width:200px;
+    height:467px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1
+{
+    font-family: "arial";
+    margin-top:20px;
+    font-size:45px;
+}
+
+header
+{
+    background-color: #5F9EA0;
+    border-radius: 40px;
+}
+
+
+.filtre
+{
+    margin-top:30px;
+    width: 64px;
+    height:64px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.filtre:hover
+{
+    background-color: black;
+    color:white;
+}
+
+.efecteBtn
+{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.efecteBtn:hover
+{
+    background-color: black;
+    color:white;
+}
+
+label
+{
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size:16px;
+}
+
+.sterge
+{
+
+    background: url('media/cosnegru.png') no-repeat;
+
+    width:25px;
+    height:25px;
+    
+}
+
+.sterge:hover
+{
+    background: url('media/cosalb.png') no-repeat;   
+}
+
+.zoomin
+{
+    background: url('media/zoominalb.png') no-repeat;
+    width:35px;
+    height:35px;
+}
+
+.zoomin:hover
+{
+    background: url('media/zoominnegru.png') no-repeat;
+    width:35px;
+    height:35px;
+}
+
+.zoomout
+{
+    background: url('media/zoomoutalb.png') no-repeat;
+    width:35px;
+    height:35px;
+    
+}
+
+.zoomout:hover
+{
+    background: url('media/zoomoutnegru.png') no-repeat;
+    width:35px;
+    height:35px;
+}
+
+
+ol li
+{
+    display:inline;
+    padding-left: 27px;
+}
+
+ol
+{
+     padding-top:20px;
+     margin-left: -10px;
+}
+
+
